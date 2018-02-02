@@ -240,6 +240,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(libcrypto)
 BuildRequires:  pkgconfig(libgpg-error)
 BuildRequires:  gpgme-devel
+BuildRequires:  libassuan-devel
 Requires:   %{secretsdaemon} = %{version}-%{release}
 Requires:   libsailfishcrypto = %{version}-%{release}
 Requires:   libsailfishcryptopluginapi = %{version}-%{release}
@@ -413,6 +414,7 @@ ln -s ../sailfish-secretsd.service %{buildroot}/%{user_unitdir}/user-session.tar
 %files -n %{secretsdaemon}-cryptoplugins-gnupg
 %defattr(-,root,root,-)
 %{_libdir}/Sailfish/Crypto/libsailfishcrypto-openpgp.so
+%{_bindir}/pinentry
 
 %files -n sailfishsecrets-tool
 %defattr(-,root,root,-)
