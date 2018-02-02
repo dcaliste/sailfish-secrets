@@ -184,6 +184,7 @@ cp -R lib/Crypto/doc/html/* %{buildroot}/%{_docdir}/Sailfish/Crypto/
 %{_libdir}/qt5/qml/Sailfish/Secrets/libsailfishsecretsplugin.so
 %{_libdir}/qt5/qml/Sailfish/Secrets/qmldir
 %{_libdir}/qt5/qml/Sailfish/Secrets/InteractionView.qml
+%{_bindir}/pinentry
 
 %files -n libsailfishcrypto
 %defattr(-,root,root,-)

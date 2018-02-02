@@ -5,4 +5,5 @@ SUBDIRS += \
     $$PWD/sqliteplugin \
     $$PWD/opensslplugin \
     $$PWD/sqlcipherplugin \
-    $$PWD/opensslcryptoplugin
+    $$PWD/opensslcryptoplugin \
+    $$PWD/gnupgplugin
